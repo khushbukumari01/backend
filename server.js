@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 5000;
 const dotenv=require("dotenv")
+const cors=require("cors")
+app.use(cors())
 dotenv.config();
 app.use(express.json());
 const experienceData = [
